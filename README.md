@@ -11,9 +11,9 @@ Join the **Partner Program** to earn client revenue, discover how [here](http://
 And access exclusive developer resources [here](http://developers.repcamp.com).
 
 ## What does the RepCamp SDK includes?
-- A set of platform [**Objects**](http://www.developers.repcamp.com) that RepCamp has such as: Customers, Products, Categories, PriceLists, etc.
+- A set of platform [**Objects**](http://developers.repcamp.com/index.php?route=article&path=24_26&article_id=102) that RepCamp has such as: Customers, Products, Categories, PriceLists, etc.
 - A **REST Services** interface so you forget about http calls and focus on transffering back and forth the data.
-- A [**Main Controller**:](http://www.developers.repcamp.com) The RepCampAPI is the main cantroller wich you will be using for authenticating and centralizing the API calls.
+- A [**Main Controller**:](http://developers.repcamp.com/index.php?route=article&path=24_26&article_id=104) The RepCampAPI is the main cantroller wich you will be using for authenticating and centralizing the API calls.
 
 ## RepCamp C# SDK Installation
 For now there is a beta version of the sdk available in the [downloads](http://developers.repcamp.com/index.php?route=article&path=24_37&article_id=203) section of developed.repcamp.com.
