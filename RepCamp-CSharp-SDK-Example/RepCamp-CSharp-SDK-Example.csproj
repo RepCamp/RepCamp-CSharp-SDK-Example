@@ -7,7 +7,7 @@
     <ProjectGuid>{01C24A26-D4E0-4527-B371-BFF8D3EED5B4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RepCamp_CSharp_SDK_Example</RootNamespace>
+    <RootNamespace>RepCampSDKExample</RootNamespace>
     <AssemblyName>RepCamp-CSharp-SDK-Example</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RepCampSDK-0.0.1">
+      <HintPath>..\..\..\Libs\RepCampSDK-0.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.0.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,12 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="application\ApiDataMaker.cs" />
+    <Compile Include="application\CustomerController.cs" />
+    <Compile Include="domain\MyCustomer.cs" />
+    <Compile Include="mappers\CustomerMapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repositories\CustomerRepository.cs" />
+    <Compile Include="services\CustomerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
