@@ -16,7 +16,7 @@ And access exclusive developer resources [here](http://developers.repcamp.com).
 - A [**Main Controller**:](http://www.developers.repcamp.com) The RepCampAPI is the main cantroller wich you will be using for authenticating and centralizing the API calls.
 
 ## RepCamp C# SDK Installation
-For now there is a beta version of the sdk available in the [downloads](http://www.developers.repcamp.com) section of developed.repcamp.com.
+For now there is a beta version of the sdk available in the [downloads](http://developers.repcamp.com/index.php?route=article&path=24_37&article_id=203) section of developed.repcamp.com.
 Once the stable version is finished you will be able to reference it as a NuGet package.
 
 ## Dependencies
