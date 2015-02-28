@@ -34,20 +34,27 @@ namespace RepCampSDKExample
                 //Instantiate the controllers
                 CustomerController customerController = new CustomerController();
 
-                //Uncomment to delete customers
-                DateTime date = new DateTime(2015, 01, 01);
-                if (customerController.removeCustomers(date)) Console.WriteLine("Delete Customers - OK");
-                else Console.WriteLine("Delete Customers - FAILED");
+                ////Uncomment to delete customers
+                //DateTime date = new DateTime(2015, 01, 01);
+                //if (customerController.removeCustomers(date)) Console.WriteLine("Delete Customers - OK");
+                //else Console.WriteLine("Delete Customers - FAILED");
 
                 //Uncoment for single customer upload
-                //if (customerController.addCustomer("CT0001")) Console.WriteLine("Upload Customer - OK");
-                //else Console.WriteLine("Upload Customer - FAILED");
+                if (customerController.addCustomer("CT0001")) Console.WriteLine("Upload Customer - OK");
+                else Console.WriteLine("Upload Customer - FAILED");
 
                 ////Uncomment for customers upload
                 ////Set date instead of null for a partial synchronization. If null, all customers will be uploaded
                 //if(customerController.uploadCustomers(null)) Console.WriteLine("Upload Customers - OK");
                 //else Console.WriteLine("Upload Customers - FAILED");
 
+                //Uncomment to retrieve all customers data
+                //List<String> criteria = new List<String>();
+                //criteria.Add("code=CT0001");
+
+                //List<Customer> customerslist = repcampAPI.getCustomers(criteria, 0, 1);
+
+                //foreach (Customer customer in customerslist) Console.WriteLine(customer.ToString());
 
                 Console.WriteLine("********************************** FINISHED **********************************");
             }
